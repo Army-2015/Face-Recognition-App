@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facial Recognition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+   <script src="main.js"></script>
+    </head>
+    <body style="background-color: plum;">
+      <center>
+        <strong style="color:purple; font-family: 'Playfair Display', serif; font-size: 55px;">FACE RECOGNITION APP</strong>
+        <hr>
+        <h3>Model is trained to identify the following person(s)</h2>
+        <br>
+        <p><span id="btn-father" class="btn btn-primary" style="width:300px; height:40px; background-color: teal; font-size: 20px;">Father</span><br></p>
+        <p><span id="btn-mother" class="btn btn-primary" style="width:300px; height:40px; background-color: teal; font-size: 20px;">Mother</span><br></p>
+        <p><span id="btn-me" class="btn btn-primary" style="width:300px;  height:40px; background-color: teal; font-size: 20px;">Me</span><br></p>
+        <br>
+        <label style="color:purple; font-size:18px;">
+            <b>Webcam preview:</b>
+        </label>
+        <div id="#webcam_div" style="height:450px; width:450px; background-color: black;"></div>
+        <br><br>
+        <p><button id="btn-capture-img" onclick="capture_img()" class="btn btn-primary" style="width:300px; height:40px; background-color: teal; font-size: 20px;">Capture Image</button><br></p>
+        <label style="color:purple; font-size: 18px;">
+            <b>Captured Image:</b>
+        </label>
+        <div id="#captured_div" style="height:450px; width:450px; background-color: black;"></div>
+        <br>
+        <p><button id="btn-identify-img" onclick="identify_img()" class="btn btn-primary" style="width:300px; height:40px; background-color: teal; font-size: 20px;">Identify Image</button><br></p>
+        <hr>
+        <br>
+      </center>
+    </body>
+</html>
